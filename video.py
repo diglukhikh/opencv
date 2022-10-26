@@ -1,9 +1,11 @@
+#скачать пробное видео по ссылке https://drive.google.com/file/d/1jnVE-Bu3FQogeBDgx9l4zXE5I4CL41xq/view?usp=sharing
+
 import numpy as np
 import cv2
 from skimage import data, filters
 
 # обращение к видео
-cap = cv2.VideoCapture('/Users/Public/files/video2.mp4')
+cap = cv2.VideoCapture('/video2.mp4')
 
 # Выбор случайных 40 кадров
 frameIds = cap.get(cv2.CAP_PROP_FRAME_COUNT) * np.random.uniform(size=40)
